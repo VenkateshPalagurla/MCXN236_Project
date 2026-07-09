@@ -1,1 +1,12 @@
-/Debug/
+# Ignore all generated Debug files
+/Debug/*
+
+# Keep linker scripts
+!/Debug/*.ld
+
+# Ignore generated build files
+/Debug/**/*.o
+/Debug/**/*.d
+/Debug/**/*.axf
+/Debug/**/*.bin
+/Debug/**/*.map
