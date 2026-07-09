@@ -1,0 +1,122 @@
+!SESSION 2026-07-08 21:43:32.292 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import E:\NXP\MCXN236_Project\MCXN236_Project\frdmmcxn236\gpio_led_output_frdmmcxn236
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data E:\NXP\MCXN236_Project\workspace -import E:\NXP\MCXN236_Project\MCXN236_Project\frdmmcxn236\gpio_led_output_frdmmcxn236
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2026-07-08 21:43:42.484
+!MESSAGE Recreating part support. No part support available.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2026-07-08 21:43:45.035
+!MESSAGE The device 'MCXN236' (version='1.0.0') from SDK 'SDK_2.x_FRDM-MCXN236' (version='26.06.00', build='epluginsite818 2026-06-26') will be installed.
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-08 21:44:02.154
+!MESSAGE Indexed 'frdmmcxn236_gpio_led_output_frdmmcxn236' (21 sources, 102 headers) in 12.4 sec: 11,867 declarations; 25,085 references; 14 unresolved inclusions; 165 syntax errors; 3,733 unresolved names (9.2%)
+!SESSION 2026-07-08 21:44:34.000 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import E:\NXP\MCXN236_Project\MCXN236_Project\frdmmcxn236\gpio_led_output_frdmmcxn236
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data E:\NXP\MCXN236_Project\workspace -import E:\NXP\MCXN236_Project\MCXN236_Project\frdmmcxn236\gpio_led_output_frdmmcxn236
+
+!ENTRY com.crt.log 4 -1 2026-07-08 21:44:41.761
+!MESSAGE E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support\info.properties: The process cannot access the file because it is being used by another process
+!STACK 0
+java.lang.Exception: java.nio.file.FileSystemException: E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support\info.properties: The process cannot access the file because it is being used by another process
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.visitFile(SDKManifestProvider.java:5593)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.visitFile(SDKManifestProvider.java:1)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2811)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider.refreshAll(SDKManifestProvider.java:5586)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.refresh(SDKChipVendorDatabase.java:745)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase$1.run(SDKChipVendorDatabase.java:402)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.FileSystemException: E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support\info.properties: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1152)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.visitFile(SDKManifestProvider.java:5591)
+	... 7 more
+
+!ENTRY com.crt.log 4 -1 2026-07-08 21:44:41.768
+!MESSAGE E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support
+!STACK 0
+java.lang.Exception: java.nio.file.DirectoryNotEmptyException: E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.postVisitDirectory(SDKManifestProvider.java:5604)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.postVisitDirectory(SDKManifestProvider.java:1)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2828)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider.refreshAll(SDKManifestProvider.java:5586)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.refresh(SDKChipVendorDatabase.java:745)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase$1.run(SDKChipVendorDatabase.java:402)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.DirectoryNotEmptyException: E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1152)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.postVisitDirectory(SDKManifestProvider.java:5602)
+	... 7 more
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2026-07-08 21:44:44.270
+!MESSAGE The device 'MCXN236' (version='1.0.0') from SDK 'SDK_2.x_FRDM-MCXN236' (version='26.06.00', build='epluginsite818 2026-06-26') will be installed.
+!SESSION 2026-07-08 21:46:27.450 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build frdmmcxn236_gpio_led_output_frdmmcxn236/Debug
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data E:\NXP\MCXN236_Project\workspace -build frdmmcxn236_gpio_led_output_frdmmcxn236/Debug
+
+!ENTRY com.crt.log 4 -1 2026-07-08 21:46:36.989
+!MESSAGE E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support\info.properties: The process cannot access the file because it is being used by another process
+!STACK 0
+java.lang.Exception: java.nio.file.FileSystemException: E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support\info.properties: The process cannot access the file because it is being used by another process
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.visitFile(SDKManifestProvider.java:5593)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.visitFile(SDKManifestProvider.java:1)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2811)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider.refreshAll(SDKManifestProvider.java:5586)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.refresh(SDKChipVendorDatabase.java:745)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase$1.run(SDKChipVendorDatabase.java:402)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.FileSystemException: E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support\info.properties: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1152)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.visitFile(SDKManifestProvider.java:5591)
+	... 7 more
+
+!ENTRY com.crt.log 4 -1 2026-07-08 21:46:36.996
+!MESSAGE E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support
+!STACK 0
+java.lang.Exception: java.nio.file.DirectoryNotEmptyException: E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.postVisitDirectory(SDKManifestProvider.java:5604)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.postVisitDirectory(SDKManifestProvider.java:1)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2828)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider.refreshAll(SDKManifestProvider.java:5586)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.refresh(SDKChipVendorDatabase.java:745)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase$1.run(SDKChipVendorDatabase.java:402)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.DirectoryNotEmptyException: E:\NXP\MCXN236_Project\workspace\.mcuxpressoide_packages_support
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1152)
+	at com.nxp.mcuxpresso.core.datamodels.providers.SDKManifestProvider$8.postVisitDirectory(SDKManifestProvider.java:5602)
+	... 7 more
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2026-07-08 21:46:39.420
+!MESSAGE The device 'MCXN236' (version='1.0.0') from SDK 'SDK_2.x_FRDM-MCXN236' (version='26.06.00', build='epluginsite818 2026-06-26') will be installed.
